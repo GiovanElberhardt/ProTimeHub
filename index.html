@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Inicial</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <form action="/inicio" method="POST"></form>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo do Site">
+            Pro Time Hub
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/tarefas">Tarefas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/notas">Notas</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/login" onclick="sair()">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron mt-5">
+            <h1 class="display-4">Bem-vindo ao Pro Time Hub!</h1>
+            <p class="lead">Gerencie seu tempo de forma eficiente com nossas ferramentas de calendário, tarefas e cronômetro.</p>
+            <hr class="my-4">
+            <p>Escolha uma das opções no menu para começar.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Tarefas</h2>
+                <p>Crie e gerencie sua lista de tarefas diárias.</p>
+                <a href="/tarefas" class="btn btn-primary" role="button">Acessar Tarefas</a>
+            </div>
+            <div class="col-md-4">
+                <h2>Notas</h2>
+                <p>Crie e organize suas anotações importantes.</p>
+                <a href="/notas" class="btn btn-primary" role="button">Acessar Notas</a>
+            </div>
+</form>
+    <script>
+        function sair() {
+            // Simular o processo de saída
+            alert('Você saiu do aplicativo.');
+            // Redirecionar para a página de login
+            window.location.href = 'login.html'; // Redirecionar para a página de login
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
